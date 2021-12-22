@@ -20,3 +20,34 @@ var levelCompleted: Bool
 var progressPercentage: Double
 
 
+// IMP
+// var to make a variable
+// let to make a constant
+
+var myVariableMessage = "Hello"
+// we can change it later
+myVariableMessage = "Bye"  // OK
+
+let myConstantMessage = "Hello"
+//myConstantMessage = "Bye" //This will cause ERROR!
+let todayHighTemperature: Float
+
+
+
+// Constants do not require values at compile time -
+// they can be calculated at runtime
+
+let currentMonth: String
+let todaysTemperature: Float
+let maximumPixelWidth: Int
+let maximumPixelHeight: Int
+
+// ...
+currentMonth = "December"
+
+// ... but they must be initialized before being used
+print(currentMonth)
+
+// ... but they must be initialized only once!
+// currentMonth = "May" -> this will be an error
+
