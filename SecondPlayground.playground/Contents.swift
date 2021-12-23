@@ -77,7 +77,67 @@ daysUntilNextTrip = 69
 
 // remove again
 daysUntilNextTrip = nil
+daysUntilNextTrip = 69
+// add again
 
+// we can't directly use optional variable
+// for ex:
+// the below syntax will give us error because daysUntilNextTrip may be nil
+// daysUntilNextTrip = daysUntilNextTrip + 10
+// so we can do the following:
+
+// check for nil
+if daysUntilNextTrip != nil {
+    // this is "forced unwrapping"
+    var unwrapped = daysUntilNextTrip!
+    unwrapped = unwrapped + 69
+    print(unwrapped)
+}
+
+// if we force unwrap an optional that's nil that will cause a runtime error so check for nil before force unwrapping
+
+// another and most efficient way to do it is :
+
+// this method is called "optional binding"
+if let unwrappedInt = daysUntilNextTrip{
+    print(unwrappedInt)
+}else{
+    // there's no value...
+}
+
+
+// Swift Collections: Arrays
+
+// make a variable array of Strings
+var musicalModes = ["Indian", "Bengali", "Assamese", "Punjabi",]
+type(of: musicalModes)
+
+let speedLimits = [21, 45, 69, 48, 57,]
+type(of: speedLimits)
+
+// what's at indexx 0?
+let initialMode = musicalModes[0]
+
+// change the string at index 3
+musicalModes[3] = "Gujarati"
+
+// add a new element
+musicalModes.append("Punjabi")
+
+// add a new array at the end of the old one
+var newMusicalmodes = ["Tamil", "Kerala", "Telugu",]
+musicalModes.append(contentsOf: newMusicalmodes)
+
+// remove an element
+let theRemovedElement = musicalModes.removeFirst()
+
+// Type annotation for array of strings
+// var myStringArray: [String]
+// but the above line is still not declared so ...
+var myStringArray: [String] = []
+
+// Type annotation for array of int
+var myIntArray: [Int] = []
 
 
 
