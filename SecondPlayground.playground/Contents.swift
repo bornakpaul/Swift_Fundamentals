@@ -41,5 +41,43 @@ let num2 = 233.25
 let sumNum = Double(num1) + num2
 
 
+//
+//
+//
+// Optionals - to define type-safe values when there might be no values at all
+// we declare a optional by just adding a single '?' after the type notation without any space
+//
+//
+//
+
+
+// You don't get default values for variable in swift.
+// For ex, in the given data below some travaler may not have middle name or may not have a secondaryEmail too
+//
+// Traveler Information
+
+
+var firstName: String
+var middleName: String? // an Optional String
+var lastName: String
+
+var email: String
+var secondaryEmail: String?
+
+var daysUntilNextTrip: Int? // an Optional Int
+
+// later ...
+daysUntilNextTrip = 7
+
+// later, remove any value
+daysUntilNextTrip = nil
+
+// initialize again
+daysUntilNextTrip = 69
+
+// remove again
+daysUntilNextTrip = nil
+
+
 
 
