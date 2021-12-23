@@ -140,4 +140,59 @@ var myStringArray: [String] = []
 var myIntArray: [Int] = []
 
 
+//
+//
+///
+/// If / else
+///
+//
+
+// parentheses aren't needed " () "
+// but curly braces are required even if there's only one statement
+
+var score = 99
+var highScore = 100
+var bonus = 10
+var penalty = 0
+
+if score > 10 {
+    print("It's greater than 10")
+}else{
+    print("It's smaller than 10")
+}
+
+
+// Conditions must be true or false
+
+var somecondition = true
+
+if somecondition {
+    print("It's true")
+}else{
+    print("It's false")
+}
+
+// OR
+
+if score > 99 {
+    print("Score is more than 99")
+}else{
+    print("Score is less than 99")
+}
+
+// Conditions with Multiple Elements
+
+// logical AND
+if a == b && c != d{ print(a,b,c,d) }
+
+// logical OR
+if a < b || a > c { print(a,b,c,d) }
+
+// use parens with complex situations
+if (score >= highScore && bonus == 0) || ((score * bonus) - penalty) >= highScore{
+    print(highScore)
+}
+
+
+
 
