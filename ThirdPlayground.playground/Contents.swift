@@ -68,3 +68,50 @@ case 9:
 default:
     print("Default")
 }
+
+//
+//
+//
+// Creating Loops
+//
+//
+//
+  
+let bunchOfWords = ["iOS Developer", "Android Developer", "Flutter Developer", "Web Developer"]
+
+for word in bunchOfWords{
+    print(word)
+}
+
+// the range operator "..." includes all the elements
+
+for num in 0...10{
+    print(num)
+}
+
+// the range operator "..<" includes all the elements except the last one
+
+for newRange in 0..<10{
+    print(newRange)
+}
+
+//
+//
+// Stride
+// so basically what stride does is its skips few elements that we want to be skipped
+// so in the below example we wanted to go from 0 to 256 but by 16 numbers
+// also in stride "through" we include the last value but in stride "to" we dont include the last value
+// we also go in decrement order in stride but not with range operator
+// therefore stride can include negative values too
+
+for strideNumber in stride(from: 0, through: 256, by:  16){
+    print(strideNumber)
+}
+
+for nextStrideNumber in stride(from: 0, to: 256, by: 16){
+    print(nextStrideNumber)
+}
+
+for negativeStride in stride(from: 100, through: -100, by: -30){
+    print(negativeStride)
+}
