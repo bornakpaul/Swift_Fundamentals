@@ -37,3 +37,34 @@ default:
 
 // In Swift there's no automatic fallthrough
 // if we don't need to do something for a case, we can just use "break" in it.
+// usually we don't need a break like other languages.
+
+
+// In Swift instead of fallthrough
+
+let levelNumber: Int
+levelNumber = 2
+
+switch levelNumber {
+case 1,2,3:
+    print("Case 1,2,3")
+case 4:
+    print("Case 4")
+default:
+    print("Default")
+}
+
+// Swift Ranges -> instead of writing case 1,2,3,4,5,6,7,8 we can write case 1...8
+// ... this 3 dots are called range operator
+
+let someNumber: Int
+someNumber = 7
+
+switch someNumber {
+case 1...8:
+    print("Case 1,2,3,4,5,6,7,8")
+case 9:
+    print("Case 9")
+default:
+    print("Default")
+}
