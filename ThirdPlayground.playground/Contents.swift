@@ -115,3 +115,19 @@ for nextStrideNumber in stride(from: 0, to: 256, by: 16){
 for negativeStride in stride(from: 100, through: -100, by: -30){
     print(negativeStride)
 }
+
+
+
+// String Interpolation
+
+// some example data
+var trackName = "Ambre"
+var artistName = "Nils Frahm"
+var timeDuration = 228
+
+// ...
+
+let message = "Now playing TRACK by ARTIST which is DURATION long"
+let messageInterpolation = "Now playing \(trackName) by \(artistName) which is \(timeDuration) long"
+let messageInterpolationNew = "Now playing \(trackName) by \(artistName) which is \(timeDuration/60)m \(timeDuration%60)s long"
+print(messageInterpolationNew)
