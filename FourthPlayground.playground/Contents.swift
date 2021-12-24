@@ -74,3 +74,22 @@ func showNewMessage(_ message: String){
 showNewMessage("This seems a little redundant.")
 
 // argument names can be ignored if we use "_" before the label while declaring the function
+
+
+//
+//
+// Changing Argument Labels
+//
+//
+
+func calculateDifference(from firstAmount: Int, to secondAmout: Int) -> Int{
+    if firstAmount > secondAmout{
+        return firstAmount - secondAmout
+    }else{
+        return secondAmout - firstAmount
+    }
+}
+
+let newResult = calculateDifference(from: 290, to: 100)
+
+print("The difference is: \(newResult)")
