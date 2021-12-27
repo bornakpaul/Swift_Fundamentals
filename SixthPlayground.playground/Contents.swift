@@ -76,9 +76,6 @@ for entry in airlines{
 }
 
 
-
-
-
 // Dictionary of String keys and String values
 var periodicElements: [String: String]
 
